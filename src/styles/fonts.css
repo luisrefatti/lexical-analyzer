@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "RedHatDisplay-Regular";
+    src: url('../assets/fonts/RedHatDisplay-Regular.ttf')
+}
+
+@font-face {
+    font-family: "RedHatDisplay-Bold";
+    src: url('../assets/fonts/RedHatDisplay-Bold.ttf')
+}

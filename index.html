@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Analisador léxico criado por Luis Fernando Refatti Boff e Eduardo Ongaratto.">
+    <meta name="author" content="Luis Fernando Refatti Boff e Eduardo Ongaratto">
+
+    <title>Analisador Léxico</title>
+
+    <link rel="stylesheet" href="src/styles/fonts.css">
+    <link rel="stylesheet" href="src/styles/root.css">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+
+    <link rel="icon" type="image/x-icon" href="src/assets/images/crown.png">
+</head>
+
+<body>
+    <!-- NAV -->
+    <nav>
+        <div class="left">
+            <a href="/">Implementação TDE - Linguagens Formais</a>
+        </div>
+
+        <div class="right">
+            <span>Luis Fernando Refatti Boff e Eduardo Ongaratto</span>
+        </div>
+    </nav>
+
+    <main>
+        <!-- CABECALHO -->
+        <section class="cabecalho-section">
+            <div class="text">
+                <h2>Analisador Léxico</h2>
+                <p>L(G) = {x | x ∈ T * e não tenha a's consecutivos} T = {a, b, c}</p>
+            </div>
+        </section>
+
+        <!-- ENTRADA -->
+        <section class="input-section">
+            <div class="text">
+                <h3>Entrada</h3>
+                <input type="text" id="entrada" name="entrada" placeholder="Digite aqui...">
+            </div>
+        </section>
+
+        <!-- TABELAO -->
+        <section class="tabela-section">
+            <div class="text">
+                <h3>Máquina de Estados </h3>
+                <div class="tabela">
+                    <table class="tabela">
+                        <thead>
+                            <tr>
+                                <th>δ</th>
+                                <th>a</th>
+                                <th>b</th>
+                                <th>c</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>q0</td>
+                                <td>q1</td>
+                                <td>q0</td>
+                                <td>q0</td>
+                            </tr>
+                            <tr>
+                                <td>q1</td>
+                                <td>qe</td>
+                                <td>q0</td>
+                                <td>q0</td>
+                            </tr>
+                            <tr>
+                                <td>qe</td>
+                                <td>qe</td>
+                                <td>qe</td>
+                                <td>qe</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- SAIDA -->
+        <section class="output-section">
+            <div class="text">
+                <h3>Saída</h3>
+                <p><b>REJEITADA</b></p>
+            </div>
+        </section>
+
+        <!-- SOBRE -->
+        <section class="sobre-section">
+            <div class="text">
+                <h3>Sobre</h3>
+                <p>Este projeto foi desenvolvido para a matéria de <b>Linguagens Formais</b>, ministrado por <b>Fabio A.
+                        Zanin,</b> da Universidade Regional Integrada do Alto Uruguai e das Missões por Luis Fernando
+                    Refatti Boff (103436) e Eduardo Ongaratto (103963). <br><br> O objetivo deste analisador léxico é
+                    atuar como um autômato na identificação da linguagem <b>L(G) = {x | x ∈ T * e não tenha a's
+                        consecutivos}
+                        T = {a, b, c}</b> como uma máquina de estados.<br><br> A utilização da ferramenta é simples:
+                    basta inserir uma cadeia no campo indicado de "Entrada" para verificar em tempo real as mudanças de
+                    estado do autômato. Para analisar a sentença digitada, basta apertar a tecla "espaço" para finalizar
+                    a cadeia atual. </p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="src/script.js"></script>
+</body>
+
+</html>

@@ -9,4 +9,5 @@ O objetivo deste analisador léxico é atuar como um autômato na identificaçã
 A utilização da ferramenta é simples: basta inserir uma cadeia no campo indicado de "Entrada" para verificar em tempo real as mudanças de estado do autômato. Para analisar a sentença digitada, basta apertar a tecla "espaço" para finalizar a cadeia atual.
 
 Repositório do projeto: https://github.com/luisrefatti/lexical-analyzer
-Publicação WEB do projeto: 
+
+Publicação WEB do projeto: https://luisrefatti.github.io/lexical-analyzer/

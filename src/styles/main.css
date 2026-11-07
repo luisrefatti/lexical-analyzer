@@ -246,3 +246,26 @@ nav .right a span {
     font-size: 25px;
     margin-bottom: 20px;
 }
+
+/* estado atual do autômato no tabelao */
+.tabela tr.estado-aceito td {
+    background-color: #038e44;
+    font-weight: bold;
+}
+
+.tabela tr.estado-rejeitado td {
+    background-color: #b71c1c;
+    font-weight: bold;
+}
+
+
+/* saida em texto */
+.output-section .text p.aceita {
+    color: #66bb6a;
+    font-weight: bold;
+}
+
+.output-section .text p.rejeitada {
+    color: #ef5350;
+    font-weight: bold;
+}

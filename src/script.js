@@ -49,7 +49,7 @@ const linhasTabela = document.querySelectorAll('.tabela tbody tr');
 // letras de a - z
 function limpar(texto) {
     return texto
-        //.toLowerCase()
+        // .toLowerCase()
         .replace(/[^a-z ]/g, '') // remove símbolos especiais
         .replace(/^ +/, '')      // não aceita espaço no início
         .replace(/ {2,}/g, ' '); // não aceita espaços repetidos
@@ -94,6 +94,7 @@ campo.addEventListener('input', () => {
     // mostra a troca de estado a cada símbolo
     const caminho = percorrer(campo.value);
     saida.textContent = '...';
+    saida.className = '';
     mostrarCaminho(caminho);
     destacarEstado(caminho[caminho.length - 1]);
 });
